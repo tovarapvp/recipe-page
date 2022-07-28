@@ -40,105 +40,79 @@
       to avoid connecting the SDK to running emulators.
     -->
     <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,0,0"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <style>
-    *,
-    *:after,
-    *::before {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    .main {
-      margin-top: 52px;
-      margin-left: 234px;
-      margin-right: 234px;
-    }
-    .main__img img {
-      max-width: 100%;
-      width: 969px;
-      height: auto;
-      border-radius: 12px;
-    }
-    .main__header h1 {
-      font-family: Playfair Display;
-      font-size: 48px;
-      font-weight: 700;
-      line-height: 64px;
-      letter-spacing: 0em;
-      text-align: left;
-    }
-    .main__header p {
-      font-family: Montserrat;
-      font-size: 14px;
-      font-style: italic;
-      font-weight: 500;
-      line-height: 17px;
-      letter-spacing: 0em;
-      text-align: left;
-    }
-    li {
-      font-family: Montserrat;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 25px;
-      letter-spacing: 0em;
-      text-align: left;
-    }
-    ol {
-    }
-  </style>
+
   <body>
     <main class="main">
       <div class="main__header">
-        <h1>casa Cheesecake Recipe</h1>
+        <h1>Cheesecake Recipe</h1>
         <p>
           Look no further for a creamy and ultra smooth classic cheesecake
           recipe! Paired with a buttery graham cracker crust, no one can deny
           its simple decadence. For the best results, bake in a water bath.
         </p>
       </div>
+      <img src="cheesecake.png" alt="" />
 
-      <div class="main__img">
-        <img src="cheesecake.png" alt="" />
-      </div>
       <div class="main__recipe">
-        <div class="recipe">
-          <div class="recipe__ingredients">
-            <h2>Ingredients</h2>
-            <h3>Graham Cracker Crust</h3>
-            <ul class="recipe__one">
-              <li class="recipe__list">
-                1 and 1/2 cups (150g) graham cracker crumbs (about 10 full sheet
-                graham crackers)
-              </li>
-              <li class="recipe__list">
-                5 Tablespoons (70g) unsalted butter, melted
-              </li>
-              <li class="recipe__list">1/4 cup (50g) granulated sugar</li>
-            </ul>
-
-            <ul class="reciper__two">
-              <li class="recipe__list">
-                four 8-ounce blocks (904g) full-fat cream cheese, softened to
-                room temperature
-              </li>
-              <li class="recipe__list">1 cup (200g) granulated sugar</li>
-              <li class="recipe__list">
-                1 cup (240g) full-fat sour cream, at room temperature
-              </li>
-              <li class="recipe__list">1 teaspoon pure vanilla extract</li>
-              <li class="recipe__list">
-                2 teaspoons fresh lemon juice (optional, but recommended)
-              </li>
-              <li class="recipe__list">3 large eggs, at room temperature</li>
-              <li class="recipe__list">
-                topping suggestions: salted caramel, lemon curd, strawberry
-                topping, chocolate ganache, red wine chocolate ganache, fresh
-                fruit, whipped cream, or raspberry sauce (recipe in notes)
-              </li>
-            </ul>
+        <div class="recipe__ingredients">
+          <h2>Ingredients</h2>
+          <h3>Graham Cracker Crust</h3>
+          <div class="recipe__one">
+            <input type="checkbox" id="recipe_one-1" />
+            <label for="recipe_one-1">
+              1 and 1/2 cups (150g)
+              <strong>graham cracker crumbs </strong>(about 10 full sheet graham
+              crackers)</label
+            >
+            <input type="checkbox" id="recipe_one-2" />
+            <label for="recipe_one-2">
+              5 Tablespoons (70g) <strong>unsalted butter</strong>,
+              melted</label
+            >
+            <input type="checkbox" id="recipe_one-3" />
+            <label for="recipe_one-3">
+              1/4 cup (50g) <strong>granulated sugar</strong></label
+            >
           </div>
+          <h3>Cheescake</h3>
+          <div class="recipe__two">
+            <input type="checkbox" id="recipe__two-1" />
+            <label for="recipe__two-1">
+              four 8-ounce blocks (904g) full-fat<strong> cream cheese</strong>,
+              softened to room temperature</label
+            >
+            <input type="checkbox" id="recipe__two-2" />
+            <label for="recipe__two-2"
+              >1 cup (200g) <strong>granulated sugar</strong>
+            </label>
+            <input type="checkbox" id="recipe__two-3" />
+            <label for="recipe__two-3">
+              1 cup (240g) full-fat <strong> sour cream </strong>, at room
+              temperature</label
+            >
+            <input type="checkbox" id="recipe__two-4" />
+            <label for="recipe__two-4">
+              2 teaspoons <strong>fresh lemon juice </strong>(optional, but
+              recommended)</label
+            >
+            <input type="checkbox" id="recipe__two-5" />
+            <label for="recipe__two-5">
+              3 large <strong>eggs</strong>, at room temperature</label
+            >
+            <input type="checkbox" id="recipe__two-6" />
+            <label for="recipe__two-6"
+              >topping suggestions: salted caramel, lemon curd, strawberry
+              topping, chocolate ganache, red wine chocolate ganache, fresh
+              fruit, whipped cream, or raspberry sauce (recipe in notes)
+            </label>
+          </div>
+          <h2>Instructions</h2>
           <div class="reciper__instructions">
             <ol class="instructions__ol">
               <li class="instructions__list">
@@ -205,10 +179,29 @@
             </ol>
           </div>
         </div>
-        <div class="reciper__features"></div>
+        <div class="reciper__features">
+          <ul>
+            <li class="features act">
+              <span class="material-symbols-outlined active">local_dining</span>
+              <div><i>YIELDS</i><i class="active">12 servings</i></div>
+            </li>
+            <li class="features">
+              <span class="material-symbols-outlined">schedule</span>
+              <div><i>PREP TIME</i><i>45 minutes</i></div>
+            </li>
+            <li class="features">
+              <span class="material-symbols-outlined">schedule</span>
+              <div><i>COCK TIME</i><i>1 hour</i></div>
+            </li>
+            <li class="features">
+              <span class="material-symbols-outlined">schedule</span>
+              <div><i>total time</i><i>7.7 horas</i></div>
+            </li>
+          </ul>
+        </div>
       </div>
     </main>
-
+    <footer><p>created by tovarapvp- devChallenges.io</p></footer>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const loadEl = document.querySelector("#load");
