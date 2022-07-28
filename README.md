@@ -9,11 +9,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://devechanllenge.web.app/">
+    <a href="https://pagerecipe-58e4f.web.app//">
       Demo
     </a>
     <span> | </span>
-    <a href="https://devechanllenge.web.app/">
+    <a href="https://pagerecipe-58e4f.web.app//">
       Solution
     </a>
     <span> | </span>
